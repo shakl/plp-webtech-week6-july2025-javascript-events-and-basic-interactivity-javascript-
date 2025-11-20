@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightMart Interactive Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BrightMart!</h1>
+        <button id="toggleThemeBtn">Toggle Dark/Light Mode</button>
+    </header>
+
+    <nav>
+        <button id="menuBtn">Menu ▼</button>
+        <ul id="dropdownMenu" class="dropdown">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Interactive Counter -->
+        <section class="card">
+            <h2>Daily Visitor Counter</h2>
+            <button id="counterBtn">I'm Visiting!</button>
+            <p>Visitors Today: <span id="clickCount">0</span></p>
+        </section>
+
+        <!-- Collapsible FAQ -->
+        <section class="card">
+            <h2>Business FAQ</h2>
+            <div class="faq">
+                <button class="faq-question">What products does BrightMart sell?</button>
+                <p class="faq-answer">BrightMart sells groceries, electronics, and home essentials at competitive prices.</p>
+            </div>
+            <div class="faq">
+                <button class="faq-question">Do you offer delivery services?</button>
+                <p class="faq-answer">Yes! We deliver nationwide with flexible delivery slots.</p>
+            </div>
+            <div class="faq">
+                <button class="faq-question">What are your payment options?</button>
+                <p class="faq-answer">We accept cash, credit/debit cards, mobile money, and online payments.</p>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section class="card">
+            <h2>Sign Up for Promotions</h2>
+            <form id="signupForm">
+                <label>
+                    Name:
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <span class="error" id="nameError"></span>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <span class="error" id="emailError"></span>
+                </label>
+                <label>
+                    Password:
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <button type="button" id="togglePassword">Show</button>
+                    <span class="error" id="passwordError"></span>
+                </label>
+                <button type="submit">Submit</button>
+                <p id="formSuccess" class="success"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BrightMart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
